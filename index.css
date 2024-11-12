@@ -1,0 +1,580 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0D1117;
+    color: white;
+}
+
+/* used in navbar */
+.customgradient {
+    /* background: rgb(163, 84, 0);
+    background: linear-gradient(90deg, rgba(163, 84, 0, 1) 0%, rgba(237, 148, 65, 1) 100%); */
+    background: rgb(128, 66, 0);
+    background: linear-gradient(90deg, rgba(128, 66, 0, 1) 0%, rgba(176, 92, 14, 1) 100%);
+}
+
+.nav-link{
+    color: white !important;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('images/hero-background.jpg') no-repeat center center/cover;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    opacity: 0.8;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.cta-button {
+    background-color: #e6883b;
+    color: #161B22;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: #e6883b;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 2em;
+    text-align: center;
+    background: url('images/about-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.about-section h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-section p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    opacity: 0.9;
+}
+
+/* Join Section */
+.join-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 2em;
+    text-align: center;
+    background: url('images/join-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.join-section h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.join-section p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    opacity: 0.9;
+}
+
+
+
+
+.imagesection {
+    width: 100%;
+    height: 94vh;
+    position: relative;
+    overflow: hidden;
+    /* background-color: #D6D2C4; */
+    /* background-color: #161B22; */
+    font-size: 1 rem;
+}
+
+.imagesection::after {
+
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    /* background-color: #a54b01;  */
+    /* background: linear-gradient(90deg, rgba(165,75,1,1) 0%, rgba(195,94,0,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(135,61,0,1) 0%, rgba(222,107,0,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(98, 44, 0, 1) 0%, rgba(222, 107, 0, 1) 100%); */
+
+    /* z-index: 2; */
+    /* clip-path: polygon(100% 68%, 0% 100%, 100% 100%); */
+    content: "";
+    z-index: 0;
+
+
+
+}
+
+.imagesection img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%); */
+    /* clip-path: polygon(0 0, 0% 100%, 100% 0); */
+    object-fit: cover;
+    opacity: 90%;
+    filter: brightness(30%);
+}
+
+
+
+.image-text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.image-text-content h1 {
+    font-size: 3.5em; /* Reverted back to 4em from 3.5em */
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-text-content h1 span {
+    display: inline-block;
+    opacity: 0;
+    animation: revealLetter 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.image-text-content h1 span.space {
+  margin-right: 0.1em; /* Reduced space between words */
+}
+
+.image-text-content p {
+    font-size: 1.5em; /* Increased from 1.3em */
+    margin-bottom: 0.5em;
+    opacity: 0;
+    animation: fadeInScale 1s ease-out 2s forwards;
+}
+
+.image-text-content span.subtitle {
+    font-size: 1.3em; /* Increased from 1.1em */
+    opacity: 0;
+    animation: fadeInScale 1s ease-out 3s forwards;
+}
+
+.animated-text {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards, glowPulse 3s infinite;
+}
+
+.delayed {
+    animation-delay: 0.5s;
+}
+
+.more-delayed {
+    animation-delay: 1s;
+}
+
+@media (max-width: 768px) {
+    .image-text-content h1 {
+        font-size: 3em; /* Reverted back to 3em from 2.5em */
+        letter-spacing: -0.5px; /* Slightly less negative spacing for smaller screens */
+    }
+    
+    .image-text-content p {
+        font-size: 1.3em; /* Increased from 1.1em */
+    }
+    
+    .image-text-content span.subtitle {
+        font-size: 1.1em; /* Increased from 0.9em */
+    }
+}
+
+.info {
+    width: 100%;
+    /* height: 40vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 2em; /* Increased padding for better spacing */
+    /* flex-wrap: wrap; */
+    font-size: 1.5em;
+
+    perspective: 1500px;
+
+    background-color: #0D1117;
+    color: white;
+
+}
+
+.info h1{
+    color: #cf7429;
+}
+
+.info.two {
+    background-color: #D6D2C4;
+    background-image: url(images/frontPage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.info.two h1{
+    color: #cf7429;
+}
+
+.loop-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a54b01;
+    opacity: 50%;
+    z-index: -1;
+    box-shadow: inset 0 0 100px 25px rgba(0, 0, 0, 0.5);
+
+}
+
+.hoverbox {
+    /* background-color: rgb(241, 241, 241); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5em;
+    margin: 2.5em;
+    flex-wrap: wrap;
+
+    /* font-weight: bold;
+    padding: 1em;
+    text-align: right;
+    color: #181a1a;
+    
+    width:  300px;
+    height: 400px;
+    box-shadow: 0 1px 5px #00000099; */
+
+    border-radius: 10px;
+    border: 1px;
+    /* border-color: rgb(201, 201, 201); */
+    border-color: #2E343B;
+    border-style: solid;
+
+    position: relative;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+
+    background-color: #161B22;
+    color: white;
+}
+
+
+.hoverbox:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+}
+
+.hoverbox .glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: radial-gradient(circle at 50% -20%, #6d6c6c02, #0000000f);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2em; /* Adjusted padding */
+    margin: 2.5em;
+    border-radius: 10px;
+    border: 1px solid #2E343B;
+    position: relative;
+    background-color: rgba(22, 27, 34, 0.9);
+    color: white;
+    max-width: 600px; /* Reduced max-width for a more compact look */
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+
+.box h2 {
+    color: #cf7429;
+    font-size: 2em; /* Adjusted font size */
+    margin-bottom: 0.5em; /* Reduced margin */
+    align-self: center;
+}
+
+.box p {
+    margin-bottom: 1em; /* Increased margin for spacing */
+    line-height: 1.5; /* Improved line height for readability */
+    font-size: 1.2em; /* Increased from 1em to 1.1em */
+}
+
+.box strong {
+    color: #e6883b;
+}
+
+.box a {
+    align-self: center;
+    margin-top: 1.5rem;
+}
+
+.box button {
+    width: fit-content;
+    background-color: #e6883b;
+    color: #161B22;
+    border: none; /* Removed border for a cleaner button */
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem; /* Adjusted padding */
+    font-size: 1em; /* Adjusted font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box button:hover {
+    background-color: transparent; /* Changed hover effect */
+    color: #e6883b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(230, 136, 59, 0.2);
+}
+
+.box button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(230, 136, 59, 0.2);
+}
+
+.box .glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: radial-gradient(circle at 50% -20%, #6d6c6c02, #0000000f);
+    pointer-events: none;
+}
+
+.info.two .box {
+    background-color: rgba(22, 27, 34, 0.9);
+}
+
+.headingcarousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D1117;
+    border-bottom: 0.5rem solid #A54B01;  
+    /* Work on the border bottom color maybe? */
+
+}
+
+.headingcarousel h1 {
+    /* flex: 1; */
+    color: white;
+    /* border: 1px solid #2E343B;
+    border-radius: 10px; */
+    padding: 1vh;
+}
+
+.h1container {
+    background-color: #161B22;
+    border: 1px solid #2E343B;
+    border-radius: 10px;
+    /* padding: 1vh; */
+}
+
+/* .headingcarousel.second {
+    background-color: #161B22;
+}
+
+.h1container.second {
+    background-color: #0D1117;
+} */
+
+
+
+
+@keyframes show {
+    0% {
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        text-shadow: 0 0 5px rgba(230, 136, 59, 0.7);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(230, 136, 59, 0.9), 0 0 30px rgba(230, 136, 59, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(230, 136, 59, 0.7);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes revealLetter {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* for the bottom section of homepage with image */
+.join-section {
+    background-image: url('images/HomePageImage1.jpg');
+    background-size: cover;
+    position: relative; /* Ensure the overlay is positioned correctly */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for darkness */
+    z-index: 1; /* Ensure the overlay is above the background */
+  }
+
+  .join-section h2,
+  .join-section p,
+  .join-section a {
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+  }
+
+/* Navbar stuff */
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust this value as needed */
+  width: auto;
+}
+
+/* Add this new rule for navbar links */
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* You can also add a hover effect if desired */
+.navbar-nav .nav-link:hover {
+    color: #e6883b !important; /* This is the orange color used elsewhere in your design */
+}
+

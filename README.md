@@ -1,2 +1,4 @@
-# Guadaloop
-Guadaloop Website
+# Guadaloop-Website
+Guadaloop's very own website :)
+
+

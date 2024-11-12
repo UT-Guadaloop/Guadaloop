@@ -1,0 +1,24 @@
+/* Add styles for the Learn More button */
+.learn-more-button {
+    width: fit-content;
+    background-color: #e6883b; /* Same background color as Contact Us button */
+    color: #161B22; /* Text color */
+    border: 2px solid #e6883b; /* Border color */
+    border-radius: 30px; /* Rounded corners */
+    padding: 0.75rem 2rem; /* Padding for the button */
+    font-size: 1.1em; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 1rem 0; /* Margin for spacing */
+}
+
+.learn-more-button:hover {
+    background-color: transparent; /* Change background on hover */
+    color: #e6883b; /* Change text color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 8px rgba(230, 136, 59, 0.2); /* Shadow effect on hover */
+}
