@@ -478,7 +478,13 @@ li .dropdown-item:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 5rem 20rem 5rem;
+  padding: 0 2rem 5rem 2rem;
+}
+
+.exec-title {
+  padding-top: 6rem;
+  color: white;
+  
 }
 
 .cards-wrapper {
