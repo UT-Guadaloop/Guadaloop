@@ -165,14 +165,13 @@ li .dropdown-item:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2.5em;
+    padding: 0.2rem;
     /* flex-wrap: wrap; */
     font-size: 1.5em;
 
     perspective: 1500px;
 
     background-color: #0D1117;
-
 }
 .info h1{
     color: #cf7429;
@@ -186,6 +185,7 @@ li .dropdown-item:hover {
 .info.two {
     background-color: #0D1117;
     background-image: none;
+
 }
 
 /* .info.two .box {
