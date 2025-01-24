@@ -119,6 +119,16 @@ body {
     opacity: 0.9;
 }
 
+.social-media-bttn {
+    margin-top: 25px;
+    display: flex;
+  }
+  
+.column {
+flex: 33.33%;
+padding: 15px;
+}
+
 
 
 
