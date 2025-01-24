@@ -454,7 +454,6 @@
     padding: 1em;
     background-color: rgba(13, 17, 23, 1); /* Semi-transparent background for contrast */
     color: white;
-    border-radius: 8px; /* Optional: Add rounded corners */
 }
 
 .plain-background h2 {
